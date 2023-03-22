@@ -98,7 +98,14 @@ class App extends StatelessWidget {
                       onPressed: () {
                         print('Hi!');
                       },
-                      child: const Text('종료'),
+                      style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 24)),
+                      child: const Text(
+                        '종료',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
                     ),
                   ],
                 ),

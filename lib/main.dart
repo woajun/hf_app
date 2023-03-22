@@ -85,26 +85,23 @@ class App extends StatelessWidget {
                 const SizedBox(
                   height: 70,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.green.shade600,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 80,
-                      vertical: 20,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        print('Hi!');
+                      },
+                      child: const Text('시작'),
                     ),
-                    child: Text(
-                      '시작',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 20,
-                      ),
+                    ElevatedButton(
+                      onPressed: () {
+                        print('Hi!');
+                      },
+                      child: const Text('종료'),
                     ),
-                  ),
-                )
+                  ],
+                ),
               ],
             ),
           ),
